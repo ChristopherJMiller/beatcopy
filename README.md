@@ -1,21 +1,19 @@
 # Beatcopy
 
-**TODO: Add description**
+A utility to make installing Beatsaber songs easier. Beatcopy will watch a folder for new **zip** files to appear and will extract them into their own folder in the destination directory. If folder creation and extract was successful, the zip file is deleted.
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `beatcopy` to your list of dependencies in `mix.exs`:
+```
+# Build beatcopy
+mix escript.build
 
-```elixir
-def deps do
-  [
-    {:beatcopy, "~> 0.1.0"}
-  ]
-end
+# Run
+./beatcopy <folder to watch> <folder to install into>
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/beatcopy](https://hexdocs.pm/beatcopy).
+## TODO
 
+- Add option flags (no cleanup, directory creation options, logging)
+- Add unit testing
+- Add documentation
